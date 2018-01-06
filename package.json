@@ -1,0 +1,29 @@
+{
+  "name": "web-starter",
+  "version": "1.0.0",
+  "description": "",
+  "author": "Alex Dytrych @SomeHats",
+  "license": "GPL-3.0",
+  "scripts": {
+    "start": "parcel src/index.html",
+    "build": "parcel build --out-dir docs --public-url /web-starter src/index.html",
+    "test": "jest",
+    "util:prettier": "prettier --write 'src/**/*.{css,js}'",
+    "util:lint": "eslint 'src/**/*.js'"
+  },
+  "dependencies": {
+    "invariant": "^2.2.2"
+  },
+  "devDependencies": {
+    "autoprefixer": "^7.2.3",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-flow": "^6.23.0",
+    "flow-bin": "^0.61.0",
+    "jest": "^22.0.4",
+    "parcel-bundler": "^1.3.1"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ]
+}
