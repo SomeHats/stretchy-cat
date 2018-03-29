@@ -8,8 +8,9 @@
     "start": "parcel src/index.html",
     "build": "parcel build --out-dir docs --public-url /web-starter src/index.html",
     "test": "jest",
-    "util:prettier": "prettier --write 'src/**/*.{css,js}'",
-    "util:lint": "eslint 'src/**/*.js'"
+    "prettier": "prettier --write 'src/**/*.{css,js}'",
+    "eslint": "eslint 'src/**/*.js'",
+    "flow": "flow check"
   },
   "dependencies": {
     "invariant": "2.2.4"
