@@ -1,10 +1,4 @@
 {
-  "env": {
-    "browser": true,
-    "commonjs": true,
-    "es6": true,
-    "node": true
-  },
   "parser": "babel-eslint",
   "parserOptions": {
     "ecmaFeatures": {
@@ -12,5 +6,15 @@
     },
     "sourceType": "module"
   },
-  "extends": ["eslint:recommended"]
+  "env": {
+    "browser": true,
+    "commonjs": true,
+    "es6": true,
+    "node": true
+  },
+  "plugins": ["flowtype"],
+  "extends": ["eslint:recommended", "plugin:flowtype/recommended"],
+  "rules": {
+    "flowtype/require-valid-file-annotation": ["error", "always"]
+  }
 }
