@@ -1,12 +1,12 @@
 {
-  "name": "web-starter",
+  "name": "stretchy-cat",
   "version": "1.0.0",
   "description": "",
   "author": "Alex Dytrych @SomeHats",
   "license": "GPL-3.0",
   "scripts": {
     "start": "parcel src/index.html",
-    "build": "parcel build --out-dir docs --public-url /web-starter src/index.html",
+    "build": "parcel build --out-dir docs --public-url /stretchy-cat src/index.html",
     "test": "jest",
     "prettier": "prettier --write 'src/**/*.{css,js}'",
     "eslint": "eslint 'src/**/*.js'",
