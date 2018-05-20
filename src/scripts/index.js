@@ -2,6 +2,7 @@
 import 'pepjs';
 import * as simulation from './simulation';
 import draw from './draw';
+import { body } from './canvas';
 
 type Drag = {
   startX: number,
@@ -12,6 +13,7 @@ type Drag = {
 
 let drag: Drag | null = null;
 const onPointerDown = (e: MouseEvent) => {
+  body.style.cursor = 'none';
   drag = {
     startX: e.clientX,
     startY: e.clientY,
@@ -32,6 +34,7 @@ const onPointerMove = (e: MouseEvent) => {
 };
 const onPointerUp = (e: MouseEvent) => {
   if (!drag) return;
+  body.style.cursor = '';
   drag = null;
   simulation.lockCatHead();
 };

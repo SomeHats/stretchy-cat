@@ -20,4 +20,4 @@ canvas.style.width = `${width}px`;
 canvas.style.height = `${height}px`;
 ctx.scale(scale, scale);
 
-export { canvas, ctx, width, height, scale, vw, vh };
+export { body, canvas, ctx, width, height, scale, vw, vh };
