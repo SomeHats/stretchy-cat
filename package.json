@@ -13,7 +13,9 @@
     "flow": "flow check"
   },
   "dependencies": {
-    "invariant": "2.2.4"
+    "invariant": "2.2.4",
+    "pepjs": "0.4.3",
+    "rebound": "0.1.0"
   },
   "devDependencies": {
     "autoprefixer": "8.2.0",
