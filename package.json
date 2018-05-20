@@ -6,7 +6,7 @@
   "license": "GPL-3.0",
   "scripts": {
     "start": "parcel src/index.html",
-    "build": "parcel build --out-dir docs --public-url /stretchy-cat src/index.html",
+    "build": "rm -rf docs; parcel build --out-dir docs --public-url /stretchy-cat src/index.html",
     "test": "jest",
     "prettier": "prettier --write 'src/**/*.{css,js}'",
     "eslint": "eslint 'src/**/*.js'",
